@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  min-height: 732px;
+  padding: 0 0 0 14px;
+
+  &-img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    max-width: none;
+    height: 732px;
+    left: 50.4%;
+    transform: translateX(-50%);
+    object-fit: cover;
+  }
+
+  .navigation {
+    margin: 0 0 222px 0;
+    padding: 32px 60px 25px 60px;
+    position: relative;
+
+    &._anim-item {
+      opacity: 0;
+      transform: translateY(-40px);
+
+      transition:
+        opacity $transition-300,
+        transform $transition-300;
+    }
+    &._animated {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      border: 1px solid $color-black;
+      width: 976px;
+      bottom: 0;
+      left: 0;
+      opacity: 0.15;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      padding: 0 1px;
+      gap: 65px;
+    }
+
+    &-link {
+      font-weight: 400;
+      color: $color-black;
+      transition: color $transition-300;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-affair;
+      }
+
+      &:active {
+        color: $color-bright-sun;
+      }
+    }
+  }
+  &-title {
+    font-family: $ff-accent;
+    margin: 0 0 9px 0;
+
+    padding: 0;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: $color-affair;
+
+    &._anim-item {
+      opacity: 0;
+      transform: translateY(40px);
+
+      transition:
+        opacity $transition-300 0.3s,
+        transform $transition-300 0.3s;
+    }
+    &._animated {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: $color-black;
+
+    &._anim-item {
+      opacity: 0;
+      transform: translateY(40px);
+
+      transition:
+        opacity $transition-300 0.45s,
+        transform $transition-300 0.45s;
+    }
+    &._animated {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}

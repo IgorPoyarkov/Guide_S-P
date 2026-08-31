@@ -1,0 +1,126 @@
+.about-city {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0 124px;
+  background-color: $color-linen;
+  position: relative;
+
+  &__title {
+    margin: 0 0 57px;
+    padding: 0 0 0 96px;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: $color-affair;
+
+    &._anim-item {
+      opacity: 0;
+      transform: translateX(-90px);
+
+      transition:
+        opacity $transition-300,
+        transform $transition-300;
+    }
+    &._animated {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    &._anim-item {
+      opacity: 0;
+      transform: translateY(90px);
+
+      transition:
+        opacity $transition-300,
+        transform $transition-300;
+    }
+    &._animated {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &__indicator-wrapper {
+    position: absolute;
+    bottom: 27px;
+    left: 28.35%;
+    transform: translateX(-50%);
+    z-index: 12;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__indicator {
+    background-color: $color-white;
+    border: none;
+    width: 32px;
+    height: 2px;
+    outline: none;
+    &--active {
+      background-color: $color-bright-sun;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 13%;
+    transform: translateY(-50%);
+    z-index: 12;
+    width: 76px;
+    height: 76px;
+    cursor: pointer;
+
+    background: none;
+    padding: 0;
+
+    color: $color-affair;
+    fill: $color-linen;
+    transition:
+      color $transition-300,
+      fill $transition-300;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-bright-sun;
+    }
+
+    &:active {
+      color: $color-black;
+    }
+
+    &--left {
+      right: 380px;
+    }
+
+    &--right {
+      right: calc(380px - 76px - 24px);
+    }
+  }
+}

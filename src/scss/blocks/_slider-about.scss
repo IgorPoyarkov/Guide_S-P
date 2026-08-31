@@ -1,0 +1,23 @@
+.slider-about {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 124px;
+
+
+  &__img {
+    max-width: none;
+    width: 771px;
+    height: 476px;
+  }
+
+  &__text {
+    width: 312px;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-black;
+  }
+}

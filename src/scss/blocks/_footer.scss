@@ -1,0 +1,44 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: $color-god-gray;
+  color: $color-linen;
+  padding: 48px 54px 23px 96px;
+  transform: translateY(-11px);
+  position: relative;
+  z-index: 12;
+  gap: 24px 0;
+
+  &-left {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    gap: 59px;
+  }
+
+  &-copyright,
+  &-confidentiality {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &-right {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .navigation {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 123px;
+      gap: 16px 0;
+    }
+
+    &-item {
+      max-width: 142px;
+    }
+  }
+}

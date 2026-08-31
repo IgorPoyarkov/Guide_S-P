@@ -1,0 +1,28 @@
+.navigation {
+  margin: 0;
+  padding: 0;
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-linen;
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-bright-sun;
+    }
+
+    &:active {
+      color: $color-affair;
+    }
+  }
+}

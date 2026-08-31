@@ -1,0 +1,40 @@
+@font-face {
+  font-display: swap; 
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/prata-v22-cyrillic_cyrillic-ext_latin_vietnamese-regular.woff2")
+      format("woff2"),
+    url("../../fonts/prata-v22-cyrillic_cyrillic-ext_latin_vietnamese-regular.woff")
+      format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/raleway-v37-cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/raleway-v37-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    url("../../fonts/raleway-v37-cyrillic-italic.woff2") format("woff2"),
+    url("../../fonts/raleway-v37-cyrillic-italic.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/raleway-v37-cyrillic-500.woff2") format("woff2"),
+    url("../../fonts/raleway-v37-cyrillic-500.woff") format("woff");
+}
