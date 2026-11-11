@@ -1,6 +1,6 @@
 export const attractionsArr = [
   {
-    src: "../../public/attractions/attractions1.png",
+    src: "attractions/attractions1.png",
     alt: "Фото Эрмитажа",
     title: "Эрмитаж",
     description: [
@@ -8,7 +8,7 @@ export const attractionsArr = [
     ],
   },
   {
-    src: "../../public/attractions/attractions2.png",
+    src: "attractions/attractions2.png",
     alt: "Фото Дворцовой площади",
     title: "Дворцовая площадь",
 
@@ -18,7 +18,7 @@ export const attractionsArr = [
     ],
   },
   {
-    src: "../../public/attractions/attractions3.png",
+    src: "attractions/attractions3.png",
     alt: "Фото Зимнего двореца",
     title: "Зимний дворец",
     description: [
@@ -26,7 +26,7 @@ export const attractionsArr = [
     ],
   },
   {
-    src: "../../public/attractions/attractions4.png",
+    src: "attractions/attractions4.png",
     alt: "Фото Петергофа",
     title: "Петергоф",
 
@@ -35,7 +35,7 @@ export const attractionsArr = [
     ],
   },
   {
-    src: "../../public/attractions/attractions5.png",
+    src: "attractions/attractions5.png",
     alt: "Фото Исаакиевского собора",
     title: "Исаакиевский собор",
 

@@ -1,3 +1,5 @@
+import asset from "../utils/asset";
+
 export default function historyCreate(historys = [], id) {
   const historysWrapperEl = document.createElement("div");
   historysWrapperEl.classList.add("historys");
@@ -36,7 +38,7 @@ export default function historyCreate(historys = [], id) {
 
     const imgEl = document.createElement("img");
     imgEl.classList.add("history-img");
-    imgEl.src = item.src;
+    imgEl.src = asset(item.src);
     imgEl.alt = item.alt;
 
     pictureEl.append(imgEl);

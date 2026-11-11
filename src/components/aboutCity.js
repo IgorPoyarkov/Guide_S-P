@@ -1,4 +1,5 @@
 import { state } from "../state/state";
+import asset from "../utils/asset";
 import createSvgIcon from "../utils/createSvgIcon";
 import { handlerSlider } from "../utils/updateSlider";
 import anchorScrollCreate from "./anchorScroll";
@@ -31,7 +32,7 @@ export default function aboutCityCreate(aboutCitys = [], id) {
 
     const imgEl = document.createElement("img");
     imgEl.classList.add("slider-about__img");
-    imgEl.src = item.src;
+    imgEl.src = asset(item.src);
     imgEl.alt = item.alt;
 
     const sliderTextEl = document.createElement("p");

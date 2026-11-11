@@ -1,3 +1,5 @@
+import asset from "../utils/asset";
+
 export default function informationBlockCreate(informationBlocks = [], id) {
   const informationBlockEl = document.createElement("div");
   informationBlockEl.classList.add("information-block");
@@ -23,7 +25,7 @@ export default function informationBlockCreate(informationBlocks = [], id) {
       `information-block__img--${img.position}`,
       "_anim-item",
     );
-    imgEl.src = img.src;
+    imgEl.src = asset(img.src);
     imgEl.alt = img.alt;
     informationBlockEl.prepend(imgEl);
   });

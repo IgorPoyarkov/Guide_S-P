@@ -1,3 +1,5 @@
+import asset from "../utils/asset";
+
 export default function mapCityCreate(id) {
   const mapCityEl = document.createElement("div");
   mapCityEl.classList.add("map-city");
@@ -15,7 +17,7 @@ export default function mapCityCreate(id) {
 
   const imgEl = document.createElement("img");
   imgEl.classList.add("map-city__img");
-  imgEl.src = "../../public/mapCity/mapCity.png";
+  imgEl.src = asset("mapCity/mapCity.png");
   imgEl.alt = "Карта Санкт-Петербурга";
 
   let isDown = false;

@@ -1,4 +1,5 @@
 import navigationCreate from "./navigation";
+import asset from "../utils/asset";
 
 export default function headerCreate(navItems = []) {
   const headerEl = document.createElement("div");
@@ -10,7 +11,7 @@ export default function headerCreate(navItems = []) {
 
   const imgEl = document.createElement("img");
   imgEl.classList.add("header-img");
-  imgEl.src = "../../public/Foto_Main.png";
+  imgEl.src = asset("Foto_Main.png");
   imgEl.alt = "Главное фото";
 
   const navEl = navigationCreate(navItems);

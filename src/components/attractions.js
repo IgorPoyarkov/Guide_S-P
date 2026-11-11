@@ -1,3 +1,5 @@
+import asset from "../utils/asset";
+
 export default function attractionsCreate(attractionsArr = [], id) {
   const containerEl = document.createElement("div");
   containerEl.classList.add("container");
@@ -38,7 +40,7 @@ export default function attractionsCreate(attractionsArr = [], id) {
 
     const imgEl = document.createElement("img");
     imgEl.classList.add("sight-img");
-    imgEl.src = item.src;
+    imgEl.src = asset(item.src);
     imgEl.alt = item.alt;
 
     const sightWrapperEl = document.createElement("div");

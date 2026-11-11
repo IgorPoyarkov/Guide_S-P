@@ -1,16 +1,16 @@
 export const aboutCitys = [
   {
-    src: "../../public/aboutCity/aboutCity1.png",
+    src: "aboutCity/aboutCity1.png",
     text: "Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов со&nbsp;всего мира своей архитектурой, культурными достопримечательностями и&nbsp;богатой историей.",
     alt: "Фото Петергофа",
   },
   {
-    src: "../../public/aboutCity/aboutCity2.png",
+    src: "aboutCity/aboutCity2.png",
     text: "Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах реки Невы и&nbsp;стал символом силы и&nbsp;могущества Российской империи.",
     alt: "Фото памятник Петру 1",
   },
   {
-    src: "../../public/aboutCity/aboutCity3.png",
+    src: "aboutCity/aboutCity3.png",
     text: "Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только культурный центр, но&nbsp;и&nbsp;один из&nbsp;крупнейших портов мира, который является важным экономическим центром России.",
     alt: "Фото лайнера в порту",
   },
